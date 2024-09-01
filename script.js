@@ -480,16 +480,9 @@ function goThroughDivs(event) {
         if (possibleDivs.length === 1) {
             // :]
         } else {
-            // Remove the .selected class from the previously selected div, if any
-            const previousDiv = document.querySelector(".in-search.selected");
-            if (previousDiv) {
-                previousDiv.classList.remove("selected");
-            };
-
             if (i < possibleDivs.length) {
                 const divToShow = possibleDivs[i];
                 divToShow.scrollIntoView();
-                divToShow.classList.add("selected");
                 i++;
             } else {
                 i = 0;
@@ -511,5 +504,5 @@ function getFilterValue(elem) {
         console.log("Third child selected");
     } else {
         console.log("Fourth child selected")
-    }
-}
+    };
+};
