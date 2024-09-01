@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crypto.io</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="top-navbar">
+        <div class="searchbar">
+            <input type="text" id="searchbar" size="20" autocomplete="off" placeholder="Search cryptocurrency..." onkeydown="goThroughDivs(event)">
+            <img src="icons8-search-100.png" height="60%" class="search-icon">
+        </div>
+        <div class="search-results-display">
+            <p><span class="result-counter"></span>&nbsp;results for "<span class="search-term"></span>"&nbsp;(press ENTER to go through them)</p>
+        </div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+        <select id="sort-filters" onchange="getFilterValue(this)">
+            <option value="a-z-descending">A to Z (descending)</option>
+            <option value="a-z-ascending">A to Z (ascending)</option>
+            <option value="ticker-descending">Ticker symbol (descending)</option>
+            <option value="ticker-ascending">Ticker symbol (sscending)</option>
+        </select>
+    </div>
+    <div class="grid-container"></div>
+    <template class="crypto-grid-item-template">
+        <div class="cover">
+            <div class="svg"></div>
+            <h2 class="currency-name"></h2>
+        </div>
+    </template>
+</body>
+</html>

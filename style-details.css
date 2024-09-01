@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    color-scheme: dark;
+}
+
+.landing-page {
+    width: 96%;
+    height: 90%;
+    text-align: center;
+    padding: 2%;
+}
+
+#centered-icon {
+    height: 80%;
+}
+
+.currency-head-name {
+    font-size: 5em;
+    font-family: system-ui;
+    margin-top: 2%;
+}
